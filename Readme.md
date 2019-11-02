@@ -32,7 +32,7 @@ Live Pointer: Coming Soon.
 ## Project Setup
 1. Clone the repository
 ```
-$ git clone https://github.com/adamtlee/Todo.git
+$ git clone https://github.com/adamtlee/itoons_coding_challenge.git
 ```
 2. Navigate to the folder and install necessary packages
 ```
