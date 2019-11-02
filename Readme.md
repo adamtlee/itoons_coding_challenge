@@ -38,9 +38,9 @@ $ git clone https://github.com/adamtlee/itoons_coding_challenge.git
 ```
 $ npm install --save
 ```
-3. Use Babel to run the API
+3. Run the API
 ```
-$  node_modules/.bin/babel-node app.js
+$  node index.js
 ```
 ## Accessing the API via CURL
  ```
