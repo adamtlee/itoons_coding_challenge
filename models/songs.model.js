@@ -14,4 +14,11 @@ getSongDetail = (id) => {
     return foundSong; 
 }
 
-module.exports = {getSongs, getSongDetail}; 
+deleteSong = (songId) => {
+    let retrievedSong = getSongDetail(songId);
+    if (retrievedSong){
+        songs.splice(songs.indexOf(retrievedSong), 1); 
+    }
+}
+
+module.exports = {getSongs, getSongDetail, deleteSong}; 

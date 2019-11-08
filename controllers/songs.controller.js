@@ -10,6 +10,9 @@ class SongController {
 
         return song;
     }
+    delete(songId){
+        songModel.deleteSong(songId); 
+    }
 }
 
 module.exports = SongController;

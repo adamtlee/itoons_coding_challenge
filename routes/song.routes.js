@@ -27,7 +27,16 @@ const getSongDetail = (req, res) => {
     }
 }
 
+const deleteSong = (req, res) => {
+    let id = req.params.id; 
+    id = Number.parseInt(id);
+
+    songController.delete(id);
+    res.sendStatus(204);
+}
+
 router.get('/', getSongs);
 router.get('/:id', getSongDetail); 
+router.delete('/:id', deleteSong);
 
 module.exports = router;
