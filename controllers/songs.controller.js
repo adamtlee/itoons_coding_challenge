@@ -5,6 +5,11 @@ class SongController {
         const songs = songModel.getSongs(); 
         return songs;
     }
+    get(id){
+        const song = songModel.getSongDetail(id); 
+
+        return song;
+    }
 }
 
 module.exports = SongController;

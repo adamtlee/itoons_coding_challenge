@@ -14,6 +14,20 @@ const getSongs = (req, res) => {
     }
 }
 
+const getSongDetail = (req, res) => {
+    let id = req.params.id; 
+    id = Number.parseInt(id); 
+    
+    const retrieveSongDetail = songController.get(id); 
+
+    if (retrieveSongDetail){
+        return res.status(200).json(retrieveSongDetail); 
+    } else {
+        return res.status(404); 
+    }
+}
+
 router.get('/', getSongs);
+router.get('/:id', getSongDetail); 
 
 module.exports = router;
