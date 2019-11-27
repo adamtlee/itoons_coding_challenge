@@ -21,4 +21,14 @@ deleteSong = (songId) => {
     }
 }
 
-module.exports = {getSongs, getSongDetail, deleteSong}; 
+const editSong = (songId, song) => {
+    let retrievedSong = songs.find((
+        song => {
+            return song.id === songId
+        }
+    ))
+
+    retrievedSong = song;
+}
+
+module.exports = {getSongs, getSongDetail, deleteSong, editSong}; 
